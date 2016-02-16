@@ -6,6 +6,6 @@ class AddUsersTable < ActiveRecord::Migration
       t.string :email
 
       t.timestamps
-  	end
+    end
   end
 end
