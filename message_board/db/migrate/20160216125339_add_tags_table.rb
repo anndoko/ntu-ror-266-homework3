@@ -1,13 +1,13 @@
 class AddTagsTable < ActiveRecord::Migration
   def change
-  	create_table :tags do |t|
-	  t.string :tag_title
+    create_table :tags do |t|
+      t.string :tag_title
 
-	  t.timestamps
-  	end
+      t.timestamps
+    end
 
-  	# Create a join table: post_tagship
-  	 create_table :post_tagship do |t|
+    # Create a join table: post_tagship
+    create_table :post_tagship do |t|
       t.integer :post_id
       t.integer :tag_id
     end
