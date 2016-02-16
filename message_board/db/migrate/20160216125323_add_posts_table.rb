@@ -5,7 +5,7 @@ class AddPostsTable < ActiveRecord::Migration
 	  t.text :post_text
 	  t.integer :vote
 
-	  t.timestamp
+	  t.timestamps
   	end
   end
 end
