@@ -7,7 +7,7 @@ class AddTagsTable < ActiveRecord::Migration
     end
 
     # Create a join table: post_tagship
-    create_table :post_tagship do |t|
+    create_table :post_tagships do |t|
       t.integer :post_id
       t.integer :tag_id
     end

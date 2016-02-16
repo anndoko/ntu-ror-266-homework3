@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160216125339) do
     t.datetime "updated_at"
   end
 
-  create_table "post_tagship", force: :cascade do |t|
+  create_table "post_tagships", force: :cascade do |t|
     t.integer "post_id"
     t.integer "tag_id"
   end

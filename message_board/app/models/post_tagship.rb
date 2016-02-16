@@ -1,4 +1,4 @@
-class post_tagship < ActiveRecord::Base
+class PostTagship < ActiveRecord::Base
   belongs_to :post
   belongs_to :tag
 end
