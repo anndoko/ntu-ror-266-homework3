@@ -7,5 +7,7 @@ class AddPostsTable < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_column :comments, :post_id, :integer
   end
 end

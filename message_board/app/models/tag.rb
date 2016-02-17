@@ -1,4 +1,4 @@
 class Tag < ActiveRecord::Base
-  has_many :post_tagship
-  has_many :posts, through: :post_tagship
+  has_many :post_tagships
+  has_many :posts, through: :post_tagships
 end

@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216125339) do
+ActiveRecord::Schema.define(version: 20160216125340) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment_text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "post_id"
+    t.integer  "user_id"
   end
 
   create_table "post_tagships", force: :cascade do |t|
@@ -30,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160216125339) do
     t.integer  "vote"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "tags", force: :cascade do |t|

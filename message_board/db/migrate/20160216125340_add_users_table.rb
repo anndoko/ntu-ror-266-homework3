@@ -7,5 +7,8 @@ class AddUsersTable < ActiveRecord::Migration
 
       t.timestamps
     end
+    
+      add_column :posts, :user_id, :integer
+      add_column :comments, :user_id, :integer
   end
 end
